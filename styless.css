@@ -12,7 +12,7 @@
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
     align-items: center;
     justify-content: center;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 14px;
     padding: 20px;
     column-gap: 1%;
@@ -20,18 +20,26 @@
 
 
 }
+.toggle{
+    display: none;
+}
 #sr{
     flex-grow: 1;
     height: auto;
 }
 
 .in-search-bar{
+    padding-left: 15px;
     width: 80%;
+    height: 34px;
     border-radius: 20px;
 
 }
 .search-tn{
     border: 1px black solid;
+    height: 34px;
+    width: 80px;
+    border-radius: 2px;
 }
 
 .login{
@@ -54,37 +62,103 @@
     border: 1px solid black;
 }
 
+@media only screen and (max-width: 1200px) {
+    #sr , .udemy-business, .teach-on-udemy, .categories, .cart{
+        display: none;
+    }
+
+    .in-search-bar{
+        display: none;
+
+    }
+    .search-tn{
+        display: none;
+    }
+
+    .login{
+        display: none;
+    }
+
+    .signup{
+        display: none;
+    }
+
+    .language-btn{
+        display: none;
+    }
+    .udemylogo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .toggle{
+        display: inline-block;
+    }
+    
+
+}
+
 /*END---NAV*/
 
 
 /*mid*/
 
 .container1{
+    margin-left: 10%;
+    margin-right: 10%;
     display: flex;
-    background-color: rgb(245, 243, 243);
+    background-color: rgba(248,249,251,255);
     height: 373px;
     margin-bottom: 40px;
+    padding-bottom: 10px;
 }
 
 .container1-card-info{
-    position: absolute;
-    top: 187px;
-    left: 100px;
+    position: relative;
+    top: 50px;
+    left: 50px;
     box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
     background-color: white;
-    width: 300px;
+    width: 370px;
     height: 150px;
-    padding: 0px 5px;
+    padding: 20px;
+    padding-right: 30px;
+    
 }
 
 .alarm{
-    margin-left: 60%;
+    padding-right: 10%;
+    margin-left: auto;
+    max-width: auto;
 }
+
+@media only screen and (max-width: 1200px) {
+    .container1{
+        flex-direction: column-reverse
+    }
+    .container1-card-info{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        top: 10px;
+        height: 130px;
+    }
+    .alarm{
+        padding: 0%;
+        margin: auto;
+        margin-bottom: 0;
+        height: 230px;
+
+    }
+  }
 
 /*end-mid*/
 
 
 .container2{
+    margin-left: 10%;
+    margin-right: 10%;
     line-height: 22.4px;
     padding-left: 20px;
     padding-right: 20px;
@@ -116,7 +190,7 @@
 .container3{
     padding: 32px;
     border: 1px solid rgb(209, 215, 220);
-    max-height: 600px;
+   
 }
 
 .textCont3{
@@ -128,6 +202,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 40px;
+    
 
 }
 
@@ -136,8 +211,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.4;
-    width: 800px;
-    height: 67.2;
+    max-width: 800px;
     
 }
 
@@ -195,4 +269,12 @@ a{
     font-weight: 700;
     max-width: 260px;
     
+}
+
+@media only screen and (max-width: 1200px) {
+    .pythonCourses{
+        display: flex;    
+        column-gap: 16px;
+        flex-wrap: wrap;
+    }
 }

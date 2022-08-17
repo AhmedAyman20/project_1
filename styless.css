@@ -227,14 +227,18 @@ ul {
     list-style-type: none;
 }
 
-.pythonCourses{
+#courses{
     display: flex;    
-    column-gap: 16px;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 40px;
+    
 }
 
 .imgconf{
     width: 100%;
     max-width: 260px;
+   
     
 }
 
@@ -247,6 +251,7 @@ a{
     font-weight: 700;
     color: black;
     max-width: 260px;
+    display: block;
 }
 
 .coureseauthor{
@@ -254,6 +259,7 @@ a{
     font-size: 12px;
     font-weight: 400;
     max-width: 260px;
+    display: block;
 }
 
 .rating{
@@ -268,6 +274,8 @@ a{
     font-size: 16px;
     font-weight: 700;
     max-width: 260px;
+    margin-left: 30%;
+    display: block;
     
 }
 

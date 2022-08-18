@@ -15,20 +15,31 @@ function search(){
             // console.log(wantedStr.value);
             // console.log(myCourse[0]["title"].includes(wantedStr.value));
             // console.log(wantedStr);
+            const arr = [];
             for (var i = 0; i < myCourse.length; i++){
                 if (myCourse[i]["title"].toLowerCase().includes(wantedStr.value.toLowerCase())) {
                     console.log(i);
+                    arr.push(myCourse[i]);
                   }
             }
+            view(arr);
         }
     });
 }
 search();
 
-function view(){
+function view(myCourses = []){
     fetch("https://mocki.io/v1/8b5615b6-7748-4e40-8190-4f6d37b3f3d9").then(res => res.json()) .then(data =>
     {
-        myCourses = data['courses'];
+        if (myCourses.length == 0 ){
+            myCourses = data['courses'];
+        }
+        //myCourses = data['courses'];
+        if (document.getElementById("course0")){
+            let myCourseslist = document.getElementById("courses");
+            myCourseslist.innerHTML = "";
+            console.log(myCourses);
+        }
         let myCourseslist = document.getElementById("courses");
         // myCourseslist.setAttribute("id", "courses");
         // myCourseslist.classList.add("pythonCourses");

@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel = "stylesheet" href = "styless.css">
-    <title>Document</title>
+    
+    <title>Udemy</title>
 </head>
 <body>
     <nav class = "nav-bar">
@@ -63,17 +68,17 @@
             Choose from 185,000 online video courses with new additions published every month
         </p>
         <div class="courses">
-                <span>Python</span>
-                <span>Excel</span>
-                <span>Web Development</span>
-                <span>JavaScript</span>
-                <span>Data Science</span>
-                <span>AWS Certificate</span>
-                <span>Drawing</span>
+                <span id="Python">Python</span>
+                <span id="Excel">Excel</span>
+                <span id="Web Development">Web Development</span>
+                <span id="JavaScript">JavaScript</span>
+                <span id="Data Science">Data Science</span>
+                <span id="AWS Certificate">AWS Certificate</span>
+                <span id="Drawing">Drawing</span>
         </div>
         <div class="container3">
-            <div class = "textCont3">
-                <h2>
+            <div id="textCont3" class = "textCont3">
+                <!-- <h2>
                     Expand your career opportunities with Python
                 </h2>
                 <p class="con3P">
@@ -84,81 +89,44 @@
                     a range of courses that will appeal to
                 </p>
                 <a class="explorePython"><span>Explore Python</span></a>
+                -->
+            </div> 
+            <div class="container">
+                <div id="myCarousel" class="carousel " data-ride="carousel">
+                    <!-- Indicators -->
+                    <!-- <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol> -->
+                
+                    <!-- Wrapper for slides -->
+                    <div id="carousel" class="carousel-inner">
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                    </a><a class="right carousel-control" href="#myCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
-            <ul id="courses" class="pythonCourses">
-                <!-- <li class="course1">
-                    <a href="#">
-                        <figure class="fig" style="display:table;">
-                            <img class="imgconf" src="https://img-c.udemycdn.com/course/240x135/394676_ce3d_5.jpg">
-                            <figcaption class="figcap coursename">Learn Python: The Complete Python Programming Course</figcaption>
-                            <figcaption class="figcap coureseauthor">Avinash Jain, The Codex</figcaption>
-                            <figcaption class="figcap rating">
-                                <span>Rating : 4.4</span>
-                                <span style="margin-left:10px;">(2,923)</span>
-                            </figcaption>
-                            <figcaption class="figcap price">E£679.99</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li class="course2">
-                    <a href="#">
-                        <figure class="fig" style="display:table;">
-                            <img class="imgconf" src="https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg">
-                            <figcaption class="figcap coursename">Learn Python: The Complete Python Programming Course</figcaption>
-                            <figcaption class="figcap coureseauthor">Avinash Jain, The Codex</figcaption>
-                            <figcaption class="figcap rating">
-                                <span>Rating : 4.4</span>
-                                <span style="margin-left:10px;">(2,923)</span>
-                            </figcaption>
-                            <figcaption class="figcap price">E£679.99</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li class="course3">
-                    <a href="#">
-                        <figure class="fig" style="display:table;">
-                            <img class="imgconf" src="https://img-c.udemycdn.com/course/240x135/405878_e5a0_3.jpg">
-                            <figcaption class="figcap coursename">Learn Python: The Complete Python Programming Course</figcaption>
-                            <figcaption class="figcap coureseauthor">Avinash Jain, The Codex</figcaption>
-                            <figcaption class="figcap rating">
-                                <span>Rating : 4.4</span>
-                                <span style="margin-left:10px;">(2,923)</span>
-                            </figcaption>
-                            <figcaption class="figcap price">E£679.99</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li class="course4">
-                    <a href="#">
-                        <figure class="fig" style="display:table;">
-                            <img class="imgconf" src="https://img-c.udemycdn.com/course/240x135/426570_1b91_3.jpg">
-                            <figcaption class="figcap coursename">Learn Python: The Complete Python Programming Course</figcaption>
-                            <figcaption class="figcap coureseauthor">Avinash Jain, The Codex</figcaption>
-                            <figcaption class="figcap rating">
-                                <span>Rating : 4.4</span>
-                                <span style="margin-left:10px;">(2,923)</span>
-                            </figcaption>
-                            <figcaption class="figcap price">E£679.99</figcaption>
-                        </figure>
-                    </a>
-                </li>
-                <li class="course5">
-                    <a href="#">
-                        <figure class="fig" style="display:table;">
-                            <img class="imgconf" src="https://img-c.udemycdn.com/course/240x135/449532_2aa9_7.jpg">
-                            <figcaption class="figcap coursename">Learn Python: The Complete Python Programming Course</figcaption>
-                            <figcaption class="figcap coureseauthor">Avinash Jain, The Codex</figcaption>
-                            <figcaption class="figcap rating">
-                                <span>Rating : 4.4</span>
-                                <span style="margin-left:10px;">(2,923)</span>
-                            </figcaption>
-                            <figcaption class="figcap price">E£679.99</figcaption>
-                        </figure>
-                    </a>
-                </li> -->
-            </ul>
+
+            <!-- <ul id="courses" class="pythonCourses"></ul> -->
+            
         </div>
-    </section> 
-    <script src = "main.js" > </script>
+    </section>
+    <section id="catSec" style="margin-left: 10%; padding: 20px; margin-right: 10%;"> 
+        <h2 style="margin-bottom: 24px; margin-top: 15px; color: #1c1d1f; font-size: 24px; font-weight: 700;">Top categories</h2>
+        <div class="container">
+            <div id="categories" class="row"></div>
+        </div> 
+    </section>
+    <script src="js/bootstrap.min.js"></script>
+    <script src = "main.js"> </script>
 </body>
 </html>
